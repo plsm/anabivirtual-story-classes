@@ -12,8 +12,10 @@ package com.anabivirtual.story.core;
  * represent other tables in the database.
  *
  * @author pedro
+ * @param <L> The class that represents a location.
  */
 public interface Story
+  <L extends Location>
 {
 
 	/**
@@ -49,12 +51,12 @@ public interface Story
 	 *
 	 * @return the location of this story in the map.
 	 */
-	public Location getLocation ();
+	public L getLocation ();
 
 	/**
 	 * Set the location of this story in the map.
 	 *
 	 * @param location the new location of this story in the map.
 	 */
-	public void setLocation (Location location);
+	public void setLocation (L location);
 }

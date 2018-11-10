@@ -10,9 +10,11 @@ package com.anabivirtual.story.core;
  * Instances of this class represent records of table {@code audio_book}.
  *
  * @author pedro
+ * @param <L> The location concrete type.
  */
 public interface AudioBookStory
-  extends AudioStory
+  <L extends Location>
+  extends AudioStory<L>
 {
 	/**
 	 * Get the audio transcription of this story.
