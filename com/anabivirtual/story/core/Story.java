@@ -43,13 +43,6 @@ public interface Story
 	public String getTitle ();
 
 	/**
-	 * Set the title of this story.
-	 *
-	 * @param title the new title of this story.
-	 */
-	public void setTitle (String title);
-
-	/**
 	 * Get the location of this story in the map.
 	 *
 	 * @return the location of this story in the map.
@@ -57,25 +50,11 @@ public interface Story
 	public L getLocation ();
 
 	/**
-	 * Set the location of this story in the map.
-	 *
-	 * @param location the new location of this story in the map.
-	 */
-	public void setLocation (L location);
-
-	/**
 	 * Get the audio filename of this story.
 	 *
 	 * @return the audio filename of this story.
 	 */
-	public String getFilename ();
-
-	/**
-	 * Set the audio filename of this story.
-	 *
-	 * @param filename the new audio filename of this story.
-	 */
-	public void setFilename (String filename);
+	public String getAudioFilename ();
 
 	/**
 	 * Get the audio transcription of this story.
@@ -84,10 +63,4 @@ public interface Story
 	 */
 	public String getTranscription ();
 
-	/**
-	 * Set the audio transcription of this story.
-	 *
-	 * @param value the new audio transcription of this story.
-	 */
-	public void setTranscription (String value);
 }

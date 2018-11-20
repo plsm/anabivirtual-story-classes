@@ -26,14 +26,7 @@ public interface BackgroundMusic
 	 *
 	 * @return the audio filename of this music.
 	 */
-	String getFilename ();
-
-	/**
-	 * Set the audio filename of this music.
-	 *
-	 * @param filename the new audio filename of this music.
-	 */
-	void setFilename (String filename);
+	String getAudioFilename ();
 
 	/**
 	 * Get the latitude of the center of the region where the music is played.
@@ -45,15 +38,6 @@ public interface BackgroundMusic
 	public double getRegionCenterLatitude ();
 
 	/**
-	 * Set the latitude of the center of the region where the music is played.
-	 * Units are degree.
-	 *
-	 * @param latitude the new latitude of the center of the region where the
-	 * music is played.
-	 */
-	public void setRegionCenterLatitude (double latitude);
-
-	/**
 	 * Get the longitude of the center of the region where the music is played..
 	 * Units are degree.
 	 *
@@ -63,25 +47,10 @@ public interface BackgroundMusic
 	public double getRegionCenterLongitude ();
 
 	/**
-	 * Set the longitude of the center of the region where the music is played.
-	 * Units are degree.
-	 *
-	 * @param longitude the new longitude of the center of the region where the
-	 * music is played.
-	 */
-	public void setRegionCenterLongitude (double longitude);
-
-	/**
 	 * Get the radius of the region where the music is played.
 	 *
 	 * @return the radius of the region where the music is played.
 	 */
 	public double getRegionRadius ();
 
-	/**
-	 * Set the radius of the region where the music is played.
-	 *
-	 * @param radius the new radius of the region where the music is played.
-	 */
-	public void setRegionRadius (double radius);
 }

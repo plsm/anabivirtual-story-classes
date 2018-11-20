@@ -26,23 +26,10 @@ public interface Place<L extends Location>
 	public L getLocation ();
 
 	/**
-	 * Set the location of this story in the map.
-	 *
-	 * @param location the new location of this story in the map.
-	 */
-	public void setLocation (L location);
-
-	/**
 	 * Get the image filename of this place.
 	 *
 	 * @return the image filename of this place.
 	 */
 	public String getImageFilename ();
 
-	/**
-	 * Set the image filename of this place.
-	 *
-	 * @param imageFilename the new image filename of this place.
-	 */
-	public void setImageFilename (String imageFilename);
 }
