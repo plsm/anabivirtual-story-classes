@@ -1,15 +1,19 @@
 package com.anabivirtual.story.core;
 
 /**
- * Base interface of all stories.
+ * A story that is played to the user when he is nearby its location.
  *
  * <p>
  * All stories have a title and a location.
+ * They also have an image that is
+ * shown, but this image is independent of the stories.
+ * Besides the mp3
+ * filename, there is also a transcription, that is displayed to the user if he
+ * whishes.
  *
  * <p>
  * Classes that implement this interface represent records of table
- * {@code story}. Interfaces that extend this one, when they are implemented,
- * represent other tables in the database.
+ * {@code story}.
  *
  * @author pedro
  * @param <L> The class that represents a location.
@@ -21,8 +25,7 @@ public interface Story
 	/**
 	 * Get the identification of this story.
 	 *
-	 * This is either the primary key or the foreign key, depending if this
-	 * interface is extended or not.
+	 * This is the primary key of the {@code story} table.
 	 *
 	 * @return the identification of this story.
 	 */
@@ -59,4 +62,32 @@ public interface Story
 	 * @param location the new location of this story in the map.
 	 */
 	public void setLocation (L location);
+
+	/**
+	 * Get the audio filename of this story.
+	 *
+	 * @return the audio filename of this story.
+	 */
+	public String getFilename ();
+
+	/**
+	 * Set the audio filename of this story.
+	 *
+	 * @param filename the new audio filename of this story.
+	 */
+	public void setFilename (String filename);
+
+	/**
+	 * Get the audio transcription of this story.
+	 *
+	 * @return the audio transcription of this story.
+	 */
+	public String getTranscription ();
+
+	/**
+	 * Set the audio transcription of this story.
+	 *
+	 * @param value the new audio transcription of this story.
+	 */
+	public void setTranscription (String value);
 }
