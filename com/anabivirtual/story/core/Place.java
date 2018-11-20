@@ -10,6 +10,15 @@ public interface Place<L extends Location>
 {
 
 	/**
+	 * Get the identification of this place.
+	 *
+	 * This is the primary key of the {@code place} table.
+	 *
+	 * @return the identification of this story.
+	 */
+	public long getID ();
+
+	/**
 	 * Get the location of this story in the map.
 	 *
 	 * @return the location of this story in the map.
