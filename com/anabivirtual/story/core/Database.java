@@ -9,13 +9,13 @@ import java.util.Collection;
  * @author pedro
  * @param <L> The class that implements locations.
  * @param <S> The class that implements stories.
- * @param <P> The class that implements places.
+ * @param <P> The class that implements points of interest.
  * @param <B> The class that implements background music.
  */
 public interface Database
   <L extends Location,
   S extends Story<L>,
-  P extends Place<L>,
+  P extends PointOfInterest<L>,
   B extends BackgroundMusic>
 {
 
@@ -34,17 +34,17 @@ public interface Database
 	Collection<S> getStories ();
 
 	/**
-	 * Get all the places that are in the database.
+	 * Get all the points of interest that are in the database.
 	 *
-	 * @return all the places in the database.
+	 * @return all the points of interest in the database.
 	 */
 
-	Collection<P> getPlaces ();
+	Collection<P> getPointsOfInterest ();
 
 	/**
 	 * Get all the background music that are in the database.
 	 *
-	 * @return all the places in the database.
+	 * @return all the background music in the database.
 	 */
 	Collection<B> getBackgroundMusic ();
 }
