@@ -20,6 +20,12 @@ public interface PointOfInterest<L extends Location>
 	public long getID ();
 
 	/**
+	 * Get the title of this point of interest in the map.
+	 * @return the title of this point of interest in the map.
+	 */
+	public String getTitle ();
+
+	/**
 	 * Get the location of this point of interest in the map.
 	 *
 	 * @return the location of this point of interest in the map.
